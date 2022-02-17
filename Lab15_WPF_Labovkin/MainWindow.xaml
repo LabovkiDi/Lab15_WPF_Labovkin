@@ -1,0 +1,244 @@
+﻿<Window x:Class="Lab15_WPF_Labovkin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab15_WPF_Labovkin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentPageViewer Name="docViewer">
+            <FlowDocumentPageViewer.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.3">
+                    <GradientStop Color="#FF95DFF3" Offset="1"/>
+                    <GradientStop Color="#FF3F899D" Offset="0.299"/>
+                    <GradientStop Color="#FFA5CCD7"/>
+                </LinearGradientBrush>
+            </FlowDocumentPageViewer.Background>
+            <FlowDocument>
+                <FlowDocument.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF369262" Offset="0.676"/>
+                        <GradientStop Color="#FF95DFF3" Offset="1"/>
+                        <GradientStop Color="#FF3F899D" Offset="0.299"/>
+                        <GradientStop Color="#FFA5CCD7"/>
+                        <GradientStop Color="#FF6CE19D" Offset="0.445"/>
+                    </LinearGradientBrush>
+                </FlowDocument.Background>
+                <Paragraph FontSize="18" FontStyle="Oblique" FontFamily="Verdana">
+                    <Bold>Cамые необычные водопады мира</Bold>
+                </Paragraph>
+                <Paragraph>
+                    <Span>
+                        Человек не перестает восхищаться водной стихией и преклоняться перед ее мощью.                      
+                        Природа подарила нам множество уникальных мест, которые стоит посетить хотя бы один раз в жизни.       
+                        Именно там можно ощутить настоящую гармонию со стихией, найти самого себя вне городской суеты.
+                        <Bold>
+                            <Italic>
+                                <Run Foreground="#FF0A359A">Водопады</Run>
+                            </Italic>
+                        </Bold>
+                        — это одни и самых необычных и удивительных творений природы, которая оставила нам множество загадок.
+                    </Span>
+                </Paragraph>
+                <List MarkerStyle="Square">
+                    <ListItem>
+                        <Paragraph>
+                            Лошадиный хвост;
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <List MarkerStyle="Square">
+                    <ListItem>
+                        <Paragraph>
+                            Туманный водопад;
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <List MarkerStyle="Square">
+                    <ListItem>
+                        <Paragraph>
+                            Горизонтальные водопады.
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Section FontSize="14" FontFamily="TimesNewRoman">
+                    <Table CellSpacing="10" BorderBrush="Black" BorderThickness="2">
+                        <Table.Columns>
+                            <TableColumn Width="3*"/>
+                            <TableColumn Width="2.2*"/>
+                            <TableColumn Width="1.4*"/>
+                            <TableColumn Width="2.3*"/>
+                        </Table.Columns>
+                        <TableRowGroup>
+                            <TableRow>
+                                <TableCell BorderBrush="Black" BorderThickness="2" Padding="10">
+                                    <Paragraph FontSize="14" TextAlignment="Center">
+                                        <Bold>
+                                            <Italic>Название</Italic>
+                                        </Bold>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell BorderBrush="Black" BorderThickness="2" Padding="10">
+                                    <Paragraph FontSize="14" TextAlignment="Center">
+                                        <Bold>
+                                            <Italic>Страна</Italic>
+                                        </Bold>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell BorderBrush="Black" BorderThickness="2" Padding="10">
+                                    <Paragraph FontSize="14" TextAlignment="Center">
+                                        <Bold>
+                                            <Italic>Год</Italic>
+                                        </Bold>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell BorderBrush="Black" BorderThickness="2" Padding="10">
+                                    <Paragraph FontSize="14" TextAlignment="Center">
+                                        <Bold>
+                                            <Italic>Высота</Italic>
+                                        </Bold>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Left">
+                                        Лошадиный хвост
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">
+                                        США
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">
+                                        1833г.
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">
+                                        480 м
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Туманный водопад
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">
+                                        Исландия
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">
+                                        <Run Foreground="Red">—</Run>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">
+                                        60 м
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Горизонтальные водопады
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">
+                                        Австралия
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">
+                                        <Run Foreground="Red">—</Run>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center">
+                                        300 м
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                    </Table>
+                </Section>
+                <List MarkerStyle="UpperRoman" MarkerOffset="5">
+                    <ListItem>
+                        <Paragraph KeepTogether="True">
+                            <Bold>Лошадиный хвост</Bold>
+                            <LineBreak/>
+                            В штате Калифорния есть национальный парк Йосемити, где можно найти один из самых необычных водопадов мира — Лошадиный хвост.
+                            <Floater Width="170" HorizontalAlignment="Right" Margin="0,0,5,5" Padding="3">
+                                <BlockUIContainer>
+                                    <Image Source="Data/Лошадиный хвост.png" Width="150"/>
+                                </BlockUIContainer>
+                            </Floater>
+                            <Span>
+                                Вода обрушивается на восточной части горы Эль-Капитан. Сам водопад открыли 187 лет назад, он довольно высокий — более шестисот метров низвергающейся воды.
+ Однако его особенность заключается совсем не в этом. В конце февраля всего пару дней можно наблюдать необычное природное явление, заключающееся в том, что потоки воды отражают лучи закатного солнца. Кажется, что падает не вода, а раскаленная лава.
+                            </Span>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Bold>Туманный водопад</Bold>
+                            <LineBreak/>
+                            <Floater Width="500" HorizontalAlignment="Stretch" Margin="0,0,5,5" Padding="3">
+                                <BlockUIContainer>
+                                    <Image Source="Data/Туманный водопад.jpg"/>
+                                </BlockUIContainer>
+                            </Floater>
+                            Туманный водопад Сельяландсфосс находится в Исландии, которая не перестает удивлять различными необыкновенными природными явлениями.
+                                Исследователи считают, что аномалия, которая и стала особенностью этого места, вызвана инверсией температур.
+                            <Span>
+                                Однако от этого логичного объяснения водопада не становится менее прекрасен и необычен.                        
+                                Бурный поток вод срывается с высоты более шестидесяти метров, мощь водной стихии поражает воображение.
+                            </Span>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Span>
+                                <Bold>Горизонтальные водопады</Bold>
+                                <LineBreak/>
+                                В Западной Австралии обязательно надо собственными глазами узреть два необычных природных явления в округе Кимберли.
+                                <Floater Width="170" HorizontalAlignment="Left" Margin="0,0,5,5" Padding="3">
+                                    <BlockUIContainer>
+                                        <Image Source="Data/Горизонтальные водопады.jpg" Width="150"/>
+                                    </BlockUIContainer>
+                                </Floater>
+                                Горизонтальные водопады, расположенные в бухте Талбот представляют собой бурные потоки вод, которые прорывают себе путь сквозь небольшие отверстия в цепи гор.
+                                Разломы располагаются параллельно друг другу на разных хребтах гор МакЛарти, их ширина составляет двадцать и десять метров.
+                            </Span>
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <BlockUIContainer>
+                    <StackPanel>
+                        <TextBlock Text="Нажми, если нравится" HorizontalAlignment="Center"/>
+                        <Button Background="Goldenrod" BorderBrush="#FFDBF27C" Width="70">
+                            <Image Source="Data/Лайк.png" Width="50" Height="30" HorizontalAlignment="Center"/>
+                        </Button>
+                    </StackPanel>
+                </BlockUIContainer>
+            </FlowDocument>
+        </FlowDocumentPageViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Background="#FFD8D941">
+            <Button Content="Открыть" Width="100" Click="Button_Click_2" Background="#FF7EE0D9"/>
+            <Button Content="Сохранить" Width="100" Click="Button_Click_1" Background="#FF7EE0D9"/>
+            <Button Content="Очистить" Width="100" Click="Button_Click" Background="#FF7EE0D9"/>
+        </StackPanel>
+    </Grid>
+</Window>
